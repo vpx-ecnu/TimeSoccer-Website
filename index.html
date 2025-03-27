@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting</title>
+  <title>ABC-GS</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -58,21 +58,25 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wenjie Liu</a><sup>*</sup>,</span>
+                <a href="https://github.com/Grav1tum" target="_blank">Wenjie Liu</a><sup>1,*</sup>,</span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhongliang Liu</a><sup>*</sup>,</span>
+                <a href="https://github.com/lzlcs" target="_blank">Zhongliang Liu</a><sup>2,*</sup>,</span>
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiaoyan Yang</a>,</span>
+                Xiaoyan Yang</a><sup>1</sup>,</span>
               </span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Man Sha</a>,</span>
+                Man Sha</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yang Li</a>
+                <a href="https://ihpdep.github.io/" target="_blank">Yang Li</a><sup>1,<i
+                    class="fas fa-envelope"></i></sup>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">East China Normal University<br>IEEE International Conference on Multimedia and
-                Expo 2025</span>
+              <span class="author-block">
+                <sup>1</sup>School of Computer Science and Technology, East China Normal University, Shanghai, China<br>
+                <sup>2</sup>School of Software Engineering, East China Normal University, Shanghai, China<br>
+                <sup>3</sup>Shanghai Chinafortune Co Ltd, Shanghai, China<br><br>
+                2025 IEEE International Conference on Multimedia and Expo (ICME)</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
 
@@ -102,7 +106,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  <a href="https://github.com/vpx-ecnu/ABC-GS" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -130,22 +134,6 @@
   </section>
 
 
-  <!-- Teaser video-->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
-        </h2>
-      </div>
-    </div>
-  </section>
-  <!-- End teaser video -->
 
   <!-- Paper abstract -->
   <section class="section hero is-light">
@@ -156,24 +144,24 @@
           <div class="content has-text-justified">
             <p>
               3D scene stylization approaches based on Neural
-Radiance Fields (NeRF) achieve promising results by optimizing
-with Nearest Neighbor Feature Matching (NNFM) loss. However,
-NNFM loss does not consider global style information. In addi-
-tion, the implicit representation of NeRF limits their fine-grained
-control over the resulting scenes. In this paper, we introduce
-ABC-GS, a novel framework based on 3D Gaussian Splatting
-to achieve high-quality 3D style transfer. To this end, a control-
-lable matching stage is designed to achieve precise alignment
-between scene content and style features through segmentation
-masks. Moreover, a style transfer loss function based on feature
-alignment is proposed to ensure that the outcomes of style
-transfer accurately reflect the global style of the reference image.
-Furthermore, the original geometric information of the scene
-is preserved with the depth loss and Gaussian regularization
-terms. Extensive experiments show that our ABC-GS provides
-controllability of style transfer and achieves stylization results
-that are more faithfully aligned with the global style of the chosen
-artistic reference.
+              Radiance Fields (NeRF) achieve promising results by optimizing
+              with Nearest Neighbor Feature Matching (NNFM) loss. However,
+              NNFM loss does not consider global style information. In addi-
+              tion, the implicit representation of NeRF limits their fine-grained
+              control over the resulting scenes. In this paper, we introduce
+              ABC-GS, a novel framework based on 3D Gaussian Splatting
+              to achieve high-quality 3D style transfer. To this end, a control-
+              lable matching stage is designed to achieve precise alignment
+              between scene content and style features through segmentation
+              masks. Moreover, a style transfer loss function based on feature
+              alignment is proposed to ensure that the outcomes of style
+              transfer accurately reflect the global style of the reference image.
+              Furthermore, the original geometric information of the scene
+              is preserved with the depth loss and Gaussian regularization
+              terms. Extensive experiments show that our ABC-GS provides
+              controllability of style transfer and achieves stylization results
+              that are more faithfully aligned with the global style of the chosen
+              artistic reference.
             </p>
           </div>
         </div>
@@ -182,108 +170,853 @@ artistic reference.
   </section>
   <!-- End paper abstract -->
 
-
   <!-- Image carousel -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              First image description.
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Second image description.
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Third image description.
-            </h2>
-          </div>
-          <div class="item">
-            <!-- Your image here -->
-            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Fourth image description.
-            </h2>
-          </div>
-        </div>
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+        <h2 class="title is-3">Overview</h2>
+        <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered">
+          Pipeline of ABC-GS
+        </h2>
       </div>
+      <!-- </div> -->
     </div>
   </section>
   <!-- End image carousel -->
 
 
-
-
-  <!-- Youtube video -->
-  <section class="hero is-small is-light">
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <!-- Paper video. -->
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
+        <h2 class="title is-3">Single Mode for LLFF Dataset</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <!-- Fern 115 -->
+          <div class="item">
+            <img src="static/compare/llff/fern/115/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/115/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/115/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/115/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/115/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
 
-            <div class="publication-video">
-              <!-- Youtube embed code here -->
-              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+          <!-- Fern 37 -->
+          <div class="item">
+            <img src="static/compare/llff/fern/37/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/37/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/37/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/37/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/37/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Fern 43 -->
+          <div class="item">
+            <img src="static/compare/llff/fern/43/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/43/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/43/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/43/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fern/43/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Flower 12 -->
+          <div class="item">
+            <img src="static/compare/llff/flower/12/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/12/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/12/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/12/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/12/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Flower 30 -->
+          <div class="item">
+            <img src="static/compare/llff/flower/30/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/30/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/30/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/30/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/30/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+
+
+          <!-- Flower 102 -->
+          <div class="item">
+            <img src="static/compare/llff/flower/102/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/102/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/102/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/102/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/flower/102/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Fortress 117 -->
+          <div class="item">
+            <img src="static/compare/llff/fortress/117/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/117/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/117/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/117/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/117/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Fortress 45 -->
+          <div class="item">
+            <img src="static/compare/llff/fortress/45/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/45/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/45/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/45/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/45/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Fortress 63 -->
+          <div class="item">
+            <img src="static/compare/llff/fortress/63/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/63/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/63/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/63/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/fortress/63/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Horns 70 -->
+          <div class="item">
+            <img src="static/compare/llff/horns/70/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/70/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/70/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/70/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/70/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Horns 123 -->
+          <div class="item">
+            <img src="static/compare/llff/horns/123/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/123/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/123/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/123/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
+                </figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/123/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Horns 88 -->
+          <div class="item">
+            <img src="static/compare/llff/horns/88/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/88/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/88/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/88/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/horns/88/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Orchids 2 -->
+          <div class="item">
+            <img src="static/compare/llff/orchids/2/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/2/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/2/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/2/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/2/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Orchids 14 -->
+          <div class="item">
+            <img src="static/compare/llff/orchids/14/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/14/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/14/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/14/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/14/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Orchids 50 -->
+          <div class="item">
+            <img src="static/compare/llff/orchids/50/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/50/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/50/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/50/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/orchids/50/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Trex 17 -->
+          <div class="item">
+            <img src="static/compare/llff/trex/17/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/17/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/17/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/17/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/17/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Trex 47 -->
+          <div class="item">
+            <img src="static/compare/llff/trex/47/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/47/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/47/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/47/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/47/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Trex 83 -->
+          <div class="item">
+            <img src="static/compare/llff/trex/83/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/83/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/83/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/83/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/llff/trex/83/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End youtube video -->
 
-
-  <!-- Video carousel -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
+        <h2 class="title is-3">Single Mode for T&T Dataset</h2>
         <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
+
+          <!-- Truck 72 -->
+          <div class="item">
+            <img src="static/compare/tnt/truck/72/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/72/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/72/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/72/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/72/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
+
+          <!-- Truck 48 -->
+          <div class="item">
+            <img src="static/compare/tnt/truck/48/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/48/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/48/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/48/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/48/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\
-              <!-- Your video file here -->
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
+
+          <!-- Truck 0 -->
+          <div class="item">
+            <img src="static/compare/tnt/truck/0/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/0/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/0/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/0/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/truck/0/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- M60 132 -->
+          <div class="item">
+            <img src="static/compare/tnt/M60/132/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/132/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/132/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/132/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/132/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- M60 84 -->
+          <div class="item">
+            <img src="static/compare/tnt/M60/84/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/84/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/84/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/84/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/84/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- M60 36 -->
+          <div class="item">
+            <img src="static/compare/tnt/M60/36/0.jpg" style="width: 100%; height: auto;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/36/Ours.gif" alt="Ours" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/36/ARF.gif" alt="ARF" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/36/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
+              </figure>
+              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+                <img src="static/compare/tnt/M60/36/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
+                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Sematic Mode</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+
+            <img src="static/sematic/2/flower_152.jpg" style="width: 100%; height: auto;" />
+
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+              <figure style="width: 49%; margin: 0.5%;">
+                <img src="static/video/sematic/flower/152fast/flower_cow_[0,1]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+              </figure>
+
+              <figure style="width: 49%; margin: 0.5%;">
+                <img src="static/video/sematic/flower/152fast/flower_cow_[1,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+              </figure>
+            </div>
+            <h2 class="subtitle has-text-centered">
+              LLFF's Flower Scene with Prompt "flower" and Style Image with Prompt "cow"
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/sematic/2/horns_155.jpg" style="width: 100%; height: auto;" />
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+              <figure style="width: 49%; margin: 0.5%; text-align: center;">
+                <img src="static/video/sematic/horns/155fast/bones_shell_[0,1]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+                <figcaption>Composition 1</figcaption>
+              </figure>
+
+              <figure style="width: 49%; margin: 0.5%; text-align: center;">
+                <img src="static/video/sematic/horns/155fast/bones_shell_[1,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+                <figcaption>Composition 2</figcaption>
+              </figure>
+            </div>
+            <h2 class="subtitle has-text-centered">
+              LLFF's Flower Scene with Prompt "flower" and Style Image with Prompt "shell"
+            </h2>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End video carousel -->
 
 
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Multi Mode for 2 Style Images</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="item">
+
+            <img src="static/multi/2/horns_31_62.jpg" style="width: 100%; height: auto;" />
+
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+              <figure style="width: 49%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/horns/31_62_fast/bones_[0,1]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+                <figcaption>Composition 1</figcaption>
+              </figure>
+
+              <figure style="width: 49%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/horns/31_62_fast/bones_[1,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+                <figcaption>Composition 2</figcaption>
+              </figure>
+            </div>
+
+            <h2 class="subtitle has-text-centered">
+              LLFF's Horns Scene with Prompt "bone"
+            </h2>
+
+          </div>
+          <div class="item">
+            <img src="static/multi/2/flower_21_42.jpg" style="width: 100%; height: auto;" />
+
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+              <figure style="width: 49%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/flower/21_42_fast/flower_[0,1]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+                <figcaption>Composition 1</figcaption>
+              </figure>
+
+              <figure style="width: 49%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/flower/21_42_fast/flower_[1,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+                <figcaption>Composition 2</figcaption>
+              </figure>
+            </div>
+
+            <h2 class="subtitle has-text-centered">
+              LLFF's Flower Scene with Prompt "flower"
+            </h2>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Multi Mode for 3 Style Images</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+
+              <img src="static/multi/3/fern_1_2_3.jpg" style="width: 100%; height: auto;" />
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/1_2_3_fast/plant,floor_[0,1,2]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+                <figcaption>Composition 1</figcaption>
+              </figure>
+
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/1_2_3_fast/plant,floor_[1,2,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+                <figcaption>Composition 2</figcaption>
+              </figure>
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/1_2_3_fast/plant,floor_[2,0,1]/video.gif" alt="Composition 3"
+                  style="width: 100%;">
+                <figcaption>Composition 3</figcaption>
+              </figure>
+            </div>
+            <h2 class="subtitle has-text-centered">
+              LLFF's Fern Scene with Prompt "plant,floor"
+            </h2>
+          </div>
+          <div class="item">
+
+            <img src="static/multi/3/fern_16_32_48.jpg" style="width: 100%; height: auto;" />
+
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/16_32_48_fast/plant,floor_[0,1,2]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+                <figcaption>Composition 1</figcaption>
+              </figure>
+
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/16_32_48_fast/plant,floor_[1,2,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+                <figcaption>Composition 2</figcaption>
+              </figure>
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/16_32_48_fast/plant,floor_[2,0,1]/video.gif" alt="Composition 3"
+                  style="width: 100%;">
+                <figcaption>Composition 3</figcaption>
+              </figure>
+            </div>
+
+            <h2 class="subtitle has-text-centered">
+              LLFF's Fern Scene with Prompt "plant,floor"
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/multi/3/fern_11_22_33.jpg" style="width: 100%; height: auto;" />
+
+
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/11_22_33_fast/plant,floor_[0,1,2]/video.gif" alt="Composition 1"
+                  style="width: 100%;">
+                <figcaption>Composition 1</figcaption>
+              </figure>
+
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/11_22_33_fast/plant,floor_[1,2,0]/video.gif" alt="Composition 2"
+                  style="width: 100%;">
+                <figcaption>Composition 2</figcaption>
+              </figure>
+              <figure style="width: 32%; margin: 0.5%; text-align: center;">
+                <img src="static/video/multi/fern/11_22_33_fast/plant,floor_[2,0,1]/video.gif" alt="Composition 3"
+                  style="width: 100%;">
+                <figcaption>Composition 3</figcaption>
+              </figure>
+            </div>
+
+            <h2 class="subtitle has-text-centered">
+              LLFF's Fern Scene with Prompt "plant,floor"
+            </h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
 
 
 
 
   <!-- Paper poster -->
-  <section class="hero is-small is-light">
+  <!-- <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
         <h2 class="title">Poster</h2>
@@ -293,7 +1026,7 @@ artistic reference.
 
       </div>
     </div>
-  </section>
+  </section> -->
   <!--End paper poster -->
 
 
@@ -301,7 +1034,12 @@ artistic reference.
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{liu2025abcgs,
+    title={ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting},
+    author={Wenjie Liu, Zhongliang Liu, Xiaoyan Yang, Man Sha and Yang Li},
+    booktitle={IEEE International Conference on Multimedia and Expo(ICME)},
+    year={2025}
+}</code></pre>
     </div>
   </section>
   <!--End BibTex citation -->
