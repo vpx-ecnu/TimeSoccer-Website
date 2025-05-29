@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ABC-GS</title>
+  <title>TimeSoccer</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -52,31 +52,39 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian
-              Splatting
+            <h1 class="title is-1 publication-title">TimeSoccer: An End-to-End Multimodal Large Language Model
+              for Soccer Commentary Generation
             </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://github.com/Grav1tum" target="_blank">Wenjie Liu</a><sup>1,*</sup>,</span>
+                <a href="https://github.com/uujianghhh" target="_blank">Ling You</a><sup>1,*</sup>,</span>
               <span class="author-block">
-                <a href="https://github.com/lzlcs" target="_blank">Zhongliang Liu</a><sup>2,*</sup>,</span>
+                <a href="https://github.com/Osilly" target="_blank">Wenxuan Huang</a><sup>1,*</sup>,</span>
               <span class="author-block">
-                Xiaoyan Yang</a><sup>1</sup>,</span>
+                Xinni Xie</a><sup>1</sup>,</span>
               </span>
               <span class="author-block">
-                Man Sha</a><sup>3</sup>,</span>
+                Xiangyi Wei</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Bangyan Li</a><sup>1</sup>,</span>
+              </span>
               <span class="author-block">
                 <a href="https://ihpdep.github.io/" target="_blank">Yang Li</a><sup>1,<i
                     class="fas fa-envelope"></i></sup>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/shaohuilin007" target="_blank">Shaohui Lin</a><sup>1,<i
+                    class="fas fa-envelope"></i></sup>
+              <span class="author-block">
+                Changbo Wang<sup>1,</sup>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <sup>1</sup>School of Computer Science and Technology, East China Normal University, Shanghai, China<br>
-                <sup>2</sup>School of Software Engineering, East China Normal University, Shanghai, China<br>
-                <sup>3</sup>Shanghai Chinafortune Co Ltd, Shanghai, China<br><br>
-                IEEE International Conference on Multimedia and Expo (ICME) 2025</span>
+                <!-- <sup>2</sup>School of Software Engineering, East China Normal University, Shanghai, China<br>
+                <sup>3</sup>Shanghai Chinafortune Co Ltd, Shanghai, China<br><br> -->
+                Arxiv 2025</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
 
@@ -84,7 +92,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2503.22218" target="_blank"
+                  <a href="https://arxiv.org/pdf/2504.17365" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -106,7 +114,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2503.22218" target="_blank"
+                  <a href="https://arxiv.org/abs/2504.17365" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -123,6 +131,27 @@
   </section>
 
 
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+        <!-- <h2 class="title is-3">Overview</h2> -->
+        <img src="static/images/overview_after.gif" alt="MY ALT TEXT" />
+        <h2 class="subtitle" style="font-size: 16px; line-height: 1.5; text-align: justify;">
+          <figcaption>
+            <strong>
+          Overview.
+        </strong>
+          Traditional methods (left) show limited accuracy in temporal alignment and caption quality, while TimeSoccer (right) produces
+          context-aware descriptions with better alignment to ground-truth events.
+        </figcaption>
+        </h2>
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <!-- End image carousel -->
 
   <!-- Paper abstract -->
   <section class="section hero is-light">
@@ -132,25 +161,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              3D scene stylization approaches based on Neural
-              Radiance Fields (NeRF) achieve promising results by optimizing
-              with Nearest Neighbor Feature Matching (NNFM) loss. However,
-              NNFM loss does not consider global style information. In addi-
-              tion, the implicit representation of NeRF limits their fine-grained
-              control over the resulting scenes. In this paper, we introduce
-              ABC-GS, a novel framework based on 3D Gaussian Splatting
-              to achieve high-quality 3D style transfer. To this end, a control-
-              lable matching stage is designed to achieve precise alignment
-              between scene content and style features through segmentation
-              masks. Moreover, a style transfer loss function based on feature
-              alignment is proposed to ensure that the outcomes of style
-              transfer accurately reflect the global style of the reference image.
-              Furthermore, the original geometric information of the scene
-              is preserved with the depth loss and Gaussian regularization
-              terms. Extensive experiments show that our ABC-GS provides
-              controllability of style transfer and achieves stylization results
-              that are more faithfully aligned with the global style of the chosen
-              artistic reference.
+              Soccer is a globally popular sporting event, typically characterized by long matches and distinctive highlight moments. Recent advances in Multimodal Large Language Models (MLLMs) offer promising capabilities in temporal grounding and video understanding, soccer commentary generation often requires precise temporal localization and semantically rich descriptions over long-form video. However, existing soccer MLLMs often rely on the temporal a priori for caption generation, so they cannot process the soccer video end-to-end. While some traditional approaches follow a two-step paradigm that is complex and fails to capture the global context to achieve suboptimal performance. To solve the above issues, we present TimeSoccer, the first end-to-end soccer MLLM for Single-anchor Dense Video Captioning (SDVC) in full-match soccer videos. TimeSoccer jointly predicts timestamps and generates captions in a single pass, enabling global context modeling across 45-minute matches. To support long video understanding of soccer matches, we introduce MoFA-Select, a training-free, motion-aware frame compression module that adaptively selects representative frames via a coarse-to-fine strategy, and incorporates complementary training paradigms to strengthen the model's ability to handle long temporal sequences. Extensive experiments demonstrate that our TimeSoccer achieves State-of-The-Art (SoTA) performance on the SDVC task in an end-to-end form, generating high-quality commentary with accurate temporal alignment and strong semantic relevance.
             </p>
           </div>
         </div>
@@ -159,15 +170,42 @@
   </section>
   <!-- End paper abstract -->
 
+     <!-- Video section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="align-items: center; text-align: center;">
+      <h2 class="title is-3">Video Demo</h2>
+      <video width="65%" height="auto" autoplay muted loop controls>
+        <source src="static/video/TimeSoccer-Demo_1.mp4" type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+        Pipeline of ABC-GS
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End video section -->
+
+<div style="width: 100%;text-align: center; margin-top: 40px;margin-bottom: 40px;"> 
+  <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808880 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right:auto;"></div>
+  </div>
   <!-- Image carousel -->
   <section class="hero is-small">
     <div class="hero-body">
-      <div class="container">
+      <div class="container" style="align-items: center; text-align: center;">
         <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-        <h2 class="title is-3">Overview</h2>
-        <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
-        <h2 class="subtitle has-text-centered">
-          Pipeline of ABC-GS
+        <h2 class="title is-3">Method</h2>
+        <img src="static/images/pipeline.png" style="max-width: 80%; margin: 0 auto; display: block;" />
+        <h2 class="subtitle" style="margin-top:20px; font-size: 16px; line-height: 1.5; text-align: justify;">
+          <figcaption>
+            <strong>
+          Overview of TimeSoccer.
+        </strong>
+        Given a full 45-minute soccer video, frame features are extracted using an Image Encoder
+        and Image Q-Former, while timestamps are obtained from the original frame sequence. Both features and timestamps are then
+        processed by the MoFA-Select module.The compressed features are passed through a sliding Video Q-Former to generate video tokens, 
+        which are concatenated with timestamp-based text tokens and the user query token before being input into the LLM for final prediction.
+        </figcaption>
         </h2>
       </div>
       <!-- </div> -->
@@ -176,328 +214,132 @@
   <!-- End image carousel -->
 
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Single Style Transfer (LLFF Dataset)</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-
-          <!-- Fern 37 -->
-          <div class="item">
-            <img src="static/compare/llff/fern/37/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fern/37/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fern/37/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fern/37/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fern/37/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Flower 102 -->
-          <div class="item">
-            <img src="static/compare/llff/flower/102/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/flower/102/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
-                </figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/flower/102/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
-                </figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/flower/102/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
-                </figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/flower/102/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Fortress 63 -->
-          <div class="item">
-            <img src="static/compare/llff/fortress/63/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fortress/63/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours
-                </figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fortress/63/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF
-                </figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fortress/63/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR
-                </figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/fortress/63/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Horns 88 -->
-          <div class="item">
-            <img src="static/compare/llff/horns/88/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/horns/88/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/horns/88/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/horns/88/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/horns/88/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Orchids 14 -->
-          <div class="item">
-            <img src="static/compare/llff/orchids/14/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/orchids/14/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/orchids/14/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/orchids/14/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/orchids/14/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Trex 47 -->
-          <div class="item">
-            <img src="static/compare/llff/trex/47/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/trex/47/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/trex/47/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/trex/47/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/llff/trex/47/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-        </div>
-      </div>
+  <div style="width: 100%;text-align: center; margin-top: 40px;margin-bottom: 40px;"> 
+    <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808880 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right:auto;"></div>
     </div>
-  </section>
-
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Single Style Transfer (T&T Dataset)</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-
-
-          <!-- Truck 48 -->
-          <div class="item">
-            <img src="static/compare/tnt/truck/48/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/48/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/48/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/48/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/48/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- Truck 0 -->
-          <div class="item">
-            <img src="static/compare/tnt/truck/0/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/0/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/0/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/0/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/truck/0/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- M60 84 -->
-          <div class="item">
-            <img src="static/compare/tnt/M60/84/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/84/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/84/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/84/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/84/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <!-- M60 36 -->
-          <div class="item">
-            <img src="static/compare/tnt/M60/36/0.jpg" style="width: 100%; height: auto;">
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/36/Ours.gif" alt="Ours" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/36/ARF.gif" alt="ARF" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/36/RefNPR.gif" alt="Ref-NPR" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">RefNPR</figcaption>
-              </figure>
-              <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
-                <img src="static/compare/tnt/M60/36/StyleGaussian.gif" alt="StyleGaussian" style="width: 100%;">
-                <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
+    <!-- Image carousel -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container" style="align-items: center; text-align: center;">
+          <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+          <h2 class="title is-3">Results</h2>
+          <img src="static/images/table1.png" style="max-width: 80%; margin: 0 auto; display: block;" />
+          <h2 class="subtitle" style="margin-top:20px; font-size: 16px; line-height: 1.5; text-align: justify;">
+            <figcaption>
+              <strong>
+            Quantitative comparison of temporal localization and caption quality across different methods on the Soccernet-Caption
+dataset.
+          </strong>
+           The best results are bolded and the second best results are underlined in all following tables. M-Score and C-Score
+denote Qwen2.5-VL-72B-Instruct evaluations for match consistency and overall commentary quality. “SN-Caption+X” indicates
+that the model generates commentary based on timestamps predicted by SN-Caption, while “3-minute via 15× inference” refers
+to generating the final match-level commentary by performing 15 separate inferences on consecutive 3-minute segments.
+          </figcaption>
+          </h2>
         </div>
+        <!-- </div> -->
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Semantic-aware Style Transfer</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-
-            <img src="static/semantic/2/flower_152.jpg" style="width: 100%; height: auto;" />
-
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-
-              <figure style="width: 49%; margin: 0.5%;">
-                <img src="static/video/semantic/flower/152fast/flower_cow_[0,1]/video.gif" alt="Composition 1"
-                  style="width: 100%;">
-              </figure>
-
-              <figure style="width: 49%; margin: 0.5%;">
-                <img src="static/video/semantic/flower/152fast/flower_cow_[1,0]/video.gif" alt="Composition 2"
-                  style="width: 100%;">
-              </figure>
-            </div>
-            <h2 class="subtitle has-text-centered">
-              LLFF's Flower Scene with Prompt "flower" and Style Image with Prompt "cow"
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/semantic/2/horns_155.jpg" style="width: 100%; height: auto;" />
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-
-              <figure style="width: 49%; margin: 0.5%; text-align: center;">
-                <img src="static/video/semantic/horns/155fast/bones_shell_[0,1]/video.gif" alt="Composition 1"
-                  style="width: 100%;">
-                <figcaption>Composition 1</figcaption>
-              </figure>
-
-              <figure style="width: 49%; margin: 0.5%; text-align: center;">
-                <img src="static/video/semantic/horns/155fast/bones_shell_[1,0]/video.gif" alt="Composition 2"
-                  style="width: 100%;">
-                <figcaption>Composition 2</figcaption>
-              </figure>
-            </div>
-            <h2 class="subtitle has-text-centered">
-              LLFF's Flower Scene with Prompt "bones" and Style Image with Prompt "shell"
-            </h2>
-          </div>
+    <!-- <div style="width: 100%;text-align: center; margin-top: 40px;margin-bottom: 40px;"> 
+    <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808880 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right:auto;"></div>
+    </div> -->
+    <!-- Image carousel -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container" style="align-items: center; text-align: center;">
+          <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+          <!-- <h2 class="title is-3">Results</h2> -->
+          <img src="static/images/table2.png" style="max-width: 80%; margin: 0 auto; display: block;" />
+          <h2 class="subtitle" style="margin-top:20px; font-size: 16px; line-height: 1.5;">
+            <figcaption>
+              <strong>
+            Comparison of MoFA-Select with standard SFT and baseline compression methods on the Soccernet-Caption dataset in
+the 45-minute video setting.
+          </strong>
+          </figcaption>
+          </h2>
         </div>
+        <!-- </div> -->
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container" style="align-items: center; text-align: center;">
+          <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+          <!-- <h2 class="title is-3">Results</h2> -->
+          <img src="static/images/table3.png" style="max-width: 80%; margin: 0 auto; display: block;" />
+          <h2 class="subtitle" style="margin-top:20px; font-size: 16px; line-height: 1.5;">
+            <figcaption>
+              <strong>
+            Ablation Study on Training Paradigms and Positional Encoding Extensions for Full-Match Video Understanding on the
+Soccernet-Caption dataset.
+          </strong>
+          </figcaption>
+          </h2>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
 
+    <div style="width: 100%;text-align: center; margin-top: 40px;margin-bottom: 40px;"> 
+  <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #808880 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right:auto;"></div>
+  </div>
+  <!-- Image carousel -->
   <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Qualitative Comparison</h2>
+
+      <!-- 第一张图 -->
+      <img src="static/images/qua_fig.png"
+           style="max-width: 80%; height: auto; margin: 0 auto 30px auto; display: block;" />
+      
+      <div style="width: 100%;text-align: center; margin-top: 20px;margin-bottom: 20px;"> 
+  <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #d6e940 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right:auto;"></div>
+  </div>
+
+      <!-- 第二张图 -->
+      <img src="static/images/example1.png"
+           style="max-width: 80%; height: auto; margin: 0 auto 30px auto; display: block;" />
+
+      <div style="width: 100%;text-align: center; margin-top: 20px;margin-bottom: 20px;"> 
+  <div style="height: 2px; background: linear-gradient(to right, #d3d3d3 0%, #d6e940 50%, #d3d3d3 100%); width: 50%; margin-left: auto; margin-right:auto;"></div>
+  </div>
+
+      <!-- 第三张图 -->
+      <img src="static/images/example2.png"
+           style="max-width: 80%; height: auto; margin: 0 auto 30px auto; display: block;" />
+
+      <!-- 图注 -->
+      <h2 class="subtitle" style="margin-top:20px; font-size: 16px; line-height: 1.5; text-align: justify;">
+        <figcaption>
+          <strong>Quality comparison results on different methods.</strong>
+          TimeSoccer demonstrates its advantages from multiple perspectives:
+          (i) more accurate timestamp alignment; (ii) improved event descriptions;
+          (iii) richer, more realistic commentary resembling professional broadcasts.
+        </figcaption>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="align-items: center; text-align: center;">
+      <h2 class="title is-3"> Application</h2>
+      <video width="65%" height="auto" autoplay muted loop controls>
+        <source src="static/video/timesoccer-application-after.mp4" type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+        Pipeline of ABC-GS
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+  <!-- <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3">Compositional Style Transfer (Two Style Images)</h2>
@@ -556,10 +398,10 @@
     </div>
     </div>
     </div>
-  </section>
+  </section> -->
 
 
-  <section class="hero is-small">
+  <!-- <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3">Compositional Style Transfer (Three Style Images)</h2>
@@ -652,7 +494,7 @@
     </div>
     </div>
     </div>
-  </section>
+  </section> -->
 
 
 
@@ -673,7 +515,7 @@
 
 
   <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{liu2025abc,
@@ -683,7 +525,7 @@
         year={2025}
       }</code></pre>
     </div>
-  </section>
+  </section> -->
   <!--End BibTex citation -->
 
 
