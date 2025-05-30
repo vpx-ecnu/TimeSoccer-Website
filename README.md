@@ -1,6 +1,6 @@
 # Project Page
 
-This repo is [project page](https://uujianghhh.github.io/TimeSoccer-Website/) for "TimeSoccer: An End-to-End Multimodal Large Language Model for Soccer Commentary Generation"
+This repo is [project page](https://vpx-ecnu.github.io/TimeSoccer-Website/) for "TimeSoccer: An End-to-End Multimodal Large Language Model for Soccer Commentary Generation"
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
